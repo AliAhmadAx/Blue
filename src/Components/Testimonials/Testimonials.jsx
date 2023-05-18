@@ -2,15 +2,16 @@ import React from "react";
 import Card2 from "../Cards/Card2";
 import { TestimonialText, TestimonialText2 } from "../../TextData";
 import star from "../../assets/Images/icons/star.svg";
+import { AiOutlineStar } from "react-icons/ai";
 
 function Testimonials() {
   return (
-    <div className="w-full flex flex-col items-center text-white">
+    <div className="w-full py-20 flex flex-col items-center text-white">
       <h2 className="text-[48px] uppercase">Testimonials</h2>
 
-      <div className="w-10/12 py-10 flex divide-x divide-dashed divide-gray-100/50">
+      <div className="w-10/12 py-10 flex justify-center divide-x divide-dashed divide-gray-100/50">
         {/* LHS  */}
-        <div className="w-1/2 space-y-5 relative">
+        <div className="w-1/3 space-y-5 relative">
           {TestimonialText?.map((item, index) => {
             return (
               <div key={index}>
@@ -24,7 +25,7 @@ function Testimonials() {
             );
           })}
 
-          <div className="absolute top-0 -right-3 space-y-20">
+          <div className="absolute top-20 -right-3 space-y-24">
             <img src={star} alt="" />
             <img src={star} alt="" />
             <img src={star} alt="" />
@@ -45,7 +46,7 @@ function Testimonials() {
         </div>
 
         {/* RHS  */}
-        <div className="pl-[50px] w-1/2 space-y-5">
+        <div className="pl-[40px] w-1/3 space-y-5">
           {TestimonialText2?.map((item, index) => {
             return (
               <div key={index}>

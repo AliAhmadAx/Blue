@@ -54,7 +54,7 @@ function FeaturedWork() {
           <RxArrowTopRight className="m-1 text-xs" />
         </div>
 
-        <Transparent ButtonTitle={"View All"} />
+        <Transparent ButtonTitle={"VIEW ALL"} />
       </span>
     </div>
   );

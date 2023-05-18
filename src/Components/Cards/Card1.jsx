@@ -4,17 +4,24 @@ import Transparent from "../Buttons/Transparent";
 
 function Card1() {
   return (
-    <div className="w-11/12 p-5 bg-white/10 space-y-5 text-gray-300 rounded-sm border border-white/20">
-      <p className="text-xs">01</p>
+    <div
+      style={{ fontFamily: "Satoshi-Regular" }}
+      className="w-11/12 flex flex-col justify-center py-10 px-10 border border-blue-300/30 backdrop-blur-sm bg-[#203764]/10 text-gray-300 rounded-sm space-y-1"
+    >
+      <p style={{ fontFamily: "Satoshi-Regular" }} className="text-xs">
+        01
+      </p>
 
-      <h1 className="text-lg">Web Design & UI/UX</h1>
+      <h1 style={{ fontFamily: "Satoshi-Regular" }} className="text-lg">
+        Web Design & UI/UX
+      </h1>
 
-      <h2>
+      <h2 style={{ fontFamily: "Satoshi-Regular" }}>
         Visually stunning web and mobile app designs that captivate your
         audience by blending brand voice and customer needs
       </h2>
 
-      <div className="flex space-x-3">
+      <div className="flex space-x-3 pt-6">
         <div className="w-fit rounded-full border border-white/20">
           <RxArrowTopRight className="m-1 text-xs" />
         </div>

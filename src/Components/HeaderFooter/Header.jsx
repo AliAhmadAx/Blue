@@ -4,6 +4,9 @@ import { RiMenu4Fill } from "react-icons/ri";
 import { NavLink, useNavigate } from "react-router-dom";
 import Buttons from "../Buttons/Buttons";
 import { MdClose } from "react-icons/md";
+import ALeft from "../../assets/Images/logo/ALeft.svg";
+import white_logo from "../../assets/Images/logo/WhiteFullLogo.svg";
+import ARight from "../../assets/Images/logo/ARight.svg";
 
 function Header() {
   const [Menu, setMenu] = useState(false);
@@ -13,50 +16,54 @@ function Header() {
   return (
     <div
       style={{ fontFamily: "Satoshi-Regular" }}
-      className={"w-full h-[100px] text-white flex justify-center -mb-32 z-50"}
+      className={
+        "w-full h-[100px] text-white/80 flex justify-center -mb-32 z-50"
+      }
     >
-      <div className="w-[85%] h-full flex items-center justify-between py-1 pr-8">
+      <div className="w-[90%] h-full flex items-center justify-between py-1">
         <span
           onClick={() => navigate("/")}
           className="self-center block lg:hidden cursor-pointer"
         >
-          {/* <img
-            src="https://testlegion.onmedia.agency/wp-content/uploads/2022/08/logo-inv-s.png"
-            alt=""
-          /> */}
+          <img src={white_logo} alt="" />
           <h1 className="text-2xl hidden lg:block self-center">IMAN ANIYA</h1>
-          <h1 className="text-2xl font-bold lg:hidden">F.W.A</h1>
+          {/* <h1 className="text-2xl font-bold lg:hidden">F.W.A</h1> */}
         </span>
 
-        <div className="space-x-2 text-sm hidden lg:flex justify-between w-10/12">
+        <div className="space-x-2 pr-5 text-sm hidden lg:flex justify-between w-full">
           <span
             onClick={() => navigate("/")}
             style={{
               color: "var(--bg-fill4)",
             }}
-            className="self-center text-lg px-10 cursor-pointer"
+            className="self-center relative text-[16px] pr-10 cursor-pointer flex"
           >
-            {/* <img
-              src="https://testlegion.onmedia.agency/wp-content/uploads/2022/08/logo-inv-s.png"
-              alt="/"
-            /> */}
-            <h1 style={{ fontFamily: "Satoshi-Regular" }} className="text-2xl ">
+            <span className="absolute flex -bottom-4">
+              <img src={ALeft} alt="" className="-mr-[12.5px] z-20" />
+              <img src={white_logo} alt="" className="z-0" />
+              <img src={ARight} alt="" className="-ml-[12.5px] z-20" />
+            </span>
+
+            <h1
+              style={{ fontFamily: "'Times New Roman', Times, serif" }}
+              className="pl-14 text-2xl "
+            >
               IMAN ANIYA
             </h1>
           </span>
 
           <span
             style={{ fontFamily: "Satoshi-Regular" }}
-            className="space-x-8 "
+            className="space-x-16 flex"
           >
             <NavLink
               end
               style={({ isActive }) => ({
-                borderBottom: isActive ? "1px solid white" : "",
+                borderBottom: isActive ? "2px solid white" : "",
                 fontFamily: "Satoshi-Regular",
               })}
               className={
-                " text-lg hover:border-b hover:border-white pb-3 px-0 mx-0 transition-colors duration-300"
+                "text-[16px] hover:border-b-[2px] pt-2 pb-2 hover:border-white px-0 mx-0 transition-colors duration-300"
               }
               to=""
             >
@@ -66,11 +73,11 @@ function Header() {
             <NavLink
               end
               style={({ isActive }) => ({
-                borderBottom: isActive ? "1px solid white" : "",
+                borderBottom: isActive ? "2px solid white" : "",
                 fontFamily: "Satoshi-Regular",
               })}
               className={
-                " text-lg hover:border-b hover:border-white pb-3 px-0 mx-0 transition-colors duration-300"
+                " text-[16px] hover:border-b-[2px] hover:border-white pt-2 pb-2 px-0 mx-0 transition-colors duration-300"
               }
               to="/about"
             >
@@ -80,11 +87,11 @@ function Header() {
             <NavLink
               end
               style={({ isActive }) => ({
-                borderBottom: isActive ? "1px solid white" : "",
+                borderBottom: isActive ? "2px solid white" : "",
                 fontFamily: "Satoshi-Regular",
               })}
               className={
-                " text-lg hover:border-b hover:border-white pb-3 px-0 mx-0 transition-colors duration-300"
+                " text-[16px] hover:border-b-[2px] hover:border-white pt-2 pb-2 px-0 mx-0 transition-colors duration-300"
               }
               to="/services"
             >
@@ -94,22 +101,27 @@ function Header() {
             <NavLink
               end
               style={({ isActive }) => ({
-                borderBottom: isActive ? "1px solid white" : "",
+                borderBottom: isActive ? "2px solid white" : "",
                 fontFamily: "Satoshi-Regular",
               })}
               className={
-                " text-lg hover:border-b hover:border-white pb-3 px-0 mx-0 transition-colors duration-300"
+                " text-[16px] hover:border-b-[2px] hover:border-white pt-2 pb-2 pr-3 px-0 mx-0 transition-colors duration-300"
               }
               to="/contact"
             >
               Contact Us
             </NavLink>
-          </span>
 
-          <p></p>
+            <Buttons
+              ButtonTitle={"LET'S TALK"}
+              onClick={() => {
+                navigate("/");
+              }}
+            />
+          </span>
         </div>
 
-        <div className="flex justify-end space-x-5">
+        <div className="flex justify-end">
           {/* Mobile Menu  */}
           {Menu === true ? (
             <div
@@ -212,13 +224,6 @@ function Header() {
               <RiMenu4Fill size="2em" />
             </span>
           </div>
-
-          <Buttons
-            ButtonTitle={"LET'S TALK"}
-            onClick={() => {
-              navigate("/");
-            }}
-          />
         </div>
       </div>
     </div>

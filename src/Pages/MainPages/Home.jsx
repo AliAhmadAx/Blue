@@ -7,6 +7,7 @@ import OurServices from "../../Components/OurServuces/OurServices";
 import OurGoals from "../../Components/OurGoals/OurGoals";
 import Testimonials from "../../Components/Testimonials/Testimonials";
 import FeaturedWork from "../../Components/FeaturedWork/FeaturedWork";
+import Contact from "../../Components/Contact/Contact";
 
 function Home() {
   const { setHeaderShow } = useContext(ThemeContext);
@@ -38,6 +39,10 @@ function Home() {
 
       <section>
         <FeaturedWork />
+      </section>
+
+      <section>
+        <Contact />
       </section>
 
       <footer>

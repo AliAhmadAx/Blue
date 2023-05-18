@@ -3,12 +3,12 @@ import { AiOutlineStar } from "react-icons/ai";
 
 function Card2(props) {
   return (
-    <div className="w-11/12 p-5 bg-white/10 space-y-5 text-gray-300 rounded-sm border border-white/20">
-      <h1 className="text-lg">{props.title}</h1>
+    <div className="w-11/12 px-10 py-10 text-gray-300 rounded-sm border border-blue-300/20 backdrop-blur-lg bg-[#203764]/20">
+      <h1 className="text-lg satoshi-light py-2">{props.title}</h1>
 
-      <h2>{props.desc}</h2>
+      <h2 className="">{props.desc}</h2>
 
-      <div className="flex space-x-3">
+      <div className="flex space-x-3 pt-8">
         <div className="w-fit h-fit flex justify-center items-center self-center rounded-full border border-white/20">
           <AiOutlineStar className="m-1 text-xs" />
         </div>

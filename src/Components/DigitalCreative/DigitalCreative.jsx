@@ -9,15 +9,20 @@ import logo6 from "../../assets/Images/logo4.svg";
 import logo6a from "../../assets/Images/logo6a.svg";
 import logo7 from "../../assets/Images/logo7.svg";
 import logo7a from "../../assets/Images/logo7a.svg";
+import patch from "../../assets/Images/patch.svg";
 
 function DigitalCreative() {
   return (
-    <div className="w-full h-screen flex flex-col justify-center items-center text-white">
-      <div className="w-10/12 h-1/2 backdrop-blur-md bg-white/10 p-10 text-center flex flex-col justify-around items-center">
-        <h2 className="text-[48px] uppercase">
+    <div className="w-full py-20 h-screen flex flex-col justify-center items-center text-[#E6E6E6]">
+      <span className="w-full flex justify-start pl-14 relative">
+        <img src={patch} alt="" className="absolute -top-14 z-0 w-36 " />
+      </span>
+
+      <div className="w-10/12 z-50  relative h-[75%] border border-blue-300/30 backdrop-blur-md bg-[#203764]/10 p-10 text-center flex flex-col justify-center space-y-10 items-center">
+        <h2 className="text-[42px] uppercase">
           Imagining the digital creative
         </h2>
-        <p className="w-2/3">
+        <p className="w-[65%]">
           Your journey with digital solutions begins with the right tools in
           hand. Providing services from website design, logo design and
           branding, to illustrations, digital art, graphic design and social
@@ -28,7 +33,7 @@ function DigitalCreative() {
       <div className="w-11/12 h-1/2 grid grid-cols-7 place-items-center">
         <img
           style={{ boxShadow: "1px 1px 20px rgba(173, 216, 230, 0.4" }}
-          className="w-16 h-16"
+          className="w-16 h-16 rounded-xl "
           src={logo2}
           alt=""
         />
@@ -37,8 +42,8 @@ function DigitalCreative() {
 
         <span className="relative flex items-center justify-center">
           <img
-            style={{ boxShadow: "1px 1px 14px 3px rgba(250, 107, 82, 0.5)" }}
-            className="w-16 h-16 "
+            style={{ boxShadow: "1px 1px 10px 3px rgba(250, 107, 82, 0.6)" }}
+            className="w-16 h-16 rounded-xl border border-orange-500/40"
             src={logo4}
             alt=""
           />
@@ -53,7 +58,7 @@ function DigitalCreative() {
         <span className="relative flex items-center justify-center">
           <img
             style={{ boxShadow: "1px 1px 14px 3px rgba(250, 82, 236, 0.529)" }}
-            className="w-16 h-16 shadow-lg shadow-pink-200/30"
+            className="w-16 h-16 rounded-xl border border-pink-500/40 shadow-lg shadow-pink-200/30"
             src={logo6}
             alt=""
           />
@@ -64,7 +69,7 @@ function DigitalCreative() {
         <span className="relative flex items-center justify-center">
           <img
             style={{ boxShadow: "1px 1px 14px 3px rgba(82, 110, 250, 0.529)" }}
-            className="w-16 h-16 shadow-lg shadow-blue-200/30"
+            className="w-16 h-16 shadow-lg rounded-xl border border-blue-500/40 shadow-blue-200/30"
             src={logo7}
             alt=""
           />
