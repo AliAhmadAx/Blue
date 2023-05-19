@@ -11,7 +11,7 @@ function Testimonials() {
     <div className="w-full py-20 flex flex-col items-center text-white">
       <h2 className="text-[30px] lg:text-[48px] uppercase">Testimonials</h2>
 
-      <div className="w-10/12 py-10 flex flex-col items-center lg:flex-row lg:justify-center z-0 lg:divide-x lg:divide-dashed lg:divide-gray-100/50">
+      <div className="w-10/12 py-10 flex flex-col items-center lg:items-start lg:flex-row lg:justify-center z-0 lg:divide-x lg:divide-dashed lg:divide-gray-100/50">
         {/* LHS  */}
         <div className="lg:w-1/3 lg:space-y-5 relative">
           {TestimonialText?.map((item, index) => {
@@ -30,7 +30,7 @@ function Testimonials() {
             );
           })}
 
-          <div className="hidden lg:absolute top-20 -right-3 space-y-28 z-20">
+          <div className="hidden lg:block lg:absolute lg:top-20 lg:-right-3 space-y-28 z-20">
             <img src={star} alt="" />
             <img src={star} alt="" />
             <img src={star} alt="" />
@@ -40,7 +40,7 @@ function Testimonials() {
             <img src={star} alt="" />
           </div>
 
-          <div className="hidden lg:absolute top-[73.5px] -right-[17px] space-y-[102.5px] z-20">
+          <div className="hidden lg:block lg:absolute top-[73.5px] -right-[17px] space-y-[102.5px] z-20">
             <img src={star2} alt="" />
             <img src={star2} alt="" />
             <img src={star2} alt="" />
@@ -50,12 +50,12 @@ function Testimonials() {
             <img src={star2} alt="" />
           </div>
 
-          <div className="hidden lg:flex text-sm space-x-5 absolute -bottom-2 right-20">
+          <div className="hidden lg:flex text-sm space-x-5 absolute -bottom-2 lg:-bottom-[89px] right-20">
             <img src={star} alt="" className="mr-1" />
             What our clients said
           </div>
 
-          <span className="hidden lg:absolute -bottom-2 right-0 text-gray-400 text-xs">
+          <span className="hidden lg:block lg:absolute -bottom-2 lg:-bottom-[89px] right-0 text-gray-400 text-xs">
             ----------
           </span>
         </div>

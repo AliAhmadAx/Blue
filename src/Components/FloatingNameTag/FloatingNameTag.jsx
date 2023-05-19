@@ -21,11 +21,41 @@ export default function FloatingNameTag() {
         freeMode={true}
         Autoplay={true}
         modules={[FreeMode, Autoplay]}
-        className="mySwiper"
+        className=""
       >
+        <SwiperSlide className="">
+          <span className="flex space-x-3 text-white/70 cursor-pointer">
+            <h2 className="font-serif font-semibold text-sm">IMAN ANIYA</h2>
+            <span className="flex space-x-1">
+              <img src={heart} alt="" />
+              <img src={heart} alt="" />
+              <img src={heart} alt="" />
+            </span>
+          </span>
+        </SwiperSlide>
+        <SwiperSlide className="">
+          <span className="flex space-x-3 text-white/70 cursor-pointer">
+            <h2 className="font-serif font-semibold text-sm">IMAN ANIYA</h2>
+            <span className="flex space-x-1">
+              <img src={heart} alt="" />
+              <img src={heart} alt="" />
+              <img src={heart} alt="" />
+            </span>
+          </span>
+        </SwiperSlide>
         <SwiperSlide>
           <span className="flex space-x-3 text-white/70 cursor-pointer">
-            <h2 className="font-serif font-semibold text-sm ">IMAN ANIYA</h2>
+            <h2 className="font-serif font-semibold text-sm">IMAN ANIYA</h2>
+            <span className="flex space-x-1">
+              <img src={heart} alt="" />
+              <img src={heart} alt="" />
+              <img src={heart} alt="" />
+            </span>
+          </span>
+        </SwiperSlide>
+        <SwiperSlide>
+          <span className="flex space-x-3 text-white/70 cursor-pointer">
+            <h2 className="font-serif font-semibold text-sm">IMAN ANIYA</h2>
             <span className="flex space-x-1">
               <img src={heart} alt="" />
               <img src={heart} alt="" />

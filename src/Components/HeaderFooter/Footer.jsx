@@ -9,8 +9,8 @@ import ARight from "../../assets/Images/logo/ARight.svg";
 import { AiOutlineInstagram } from "react-icons/ai";
 
 const Footer = () => {
-  const getCurrentYear = () => {
-    return new Date().getFullYear();
+  const ScrollToTop = () => {
+    window.scrollTo(0, 0);
   };
 
   return (
@@ -177,7 +177,10 @@ const Footer = () => {
                   TO TOP
                 </p>
 
-                <span className="border border-gray-500/50 rounded-full">
+                <span
+                  onClick={ScrollToTop}
+                  className="border border-gray-500/50 rounded-full"
+                >
                   <BsArrowUp className="m-[12px]" />
                 </span>
               </span>

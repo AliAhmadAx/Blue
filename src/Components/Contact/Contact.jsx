@@ -30,10 +30,10 @@ function Contact() {
 
         {/* RHS  */}
         <div className="w-full lg:w-1/2 flex flex-col justify-center items-center text-left text-white/80">
-          <span className="w-11/12 lg:w-2/3 flex items-center space-x-2">
+          <span className="w-11/12 pr-2 lg:pr-0 lg:w-2/3 flex flex-col justify-center lg:flex-row lg:items-center space-x-2">
             <label
               htmlFor="Email"
-              className="text-xs text-white whitespace-nowrap"
+              className="text-xs pb-1 pl-2 lg:pl-0 lg:pb-0 text-white whitespace-nowrap"
             >
               EMAIL ID:
             </label>
@@ -43,10 +43,10 @@ function Contact() {
             />
           </span>
 
-          <span className="w-11/12 lg:w-2/3 flex space-x-2 mt-5">
+          <span className="w-11/12 pr-2 lg:pr-0 lg:w-2/3 flex flex-col justify-center lg:flex-row lg:items-center space-x-2 mt-5">
             <label
               htmlFor="area"
-              className="text-xs text-white whitespace-nowrap"
+              className="text-xs pb-1 pl-2 lg:pl-0 lg:pb-0 text-white whitespace-nowrap"
             >
               Message:
             </label>
