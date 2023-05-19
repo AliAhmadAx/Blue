@@ -18,11 +18,11 @@ function DigitalCreative() {
         <img src={patch} alt="" className="absolute -top-14 z-0 w-36 " />
       </span>
 
-      <div className="w-10/12 z-50  relative h-[75%] border border-blue-300/30 backdrop-blur-md bg-[#203764]/10 p-10 text-center flex flex-col justify-center space-y-10 items-center">
-        <h2 className="text-[42px] uppercase">
+      <div className="w-10/12 z-40  relative h-[75%] border border-blue-300/30 backdrop-blur-md bg-[#203764]/10 p-10 text-center flex flex-col justify-center space-y-10 items-center">
+        <h2 className="text-[30px] lg:text-[42px] uppercase">
           Imagining the digital creative
         </h2>
-        <p className="w-[65%]">
+        <p className="text-sm lg:text-base w-[90%] lg:w-[65%]">
           Your journey with digital solutions begins with the right tools in
           hand. Providing services from website design, logo design and
           branding, to illustrations, digital art, graphic design and social
@@ -30,7 +30,7 @@ function DigitalCreative() {
         </p>
       </div>
 
-      <div className="w-11/12 h-1/2 grid grid-cols-7 place-items-center">
+      <div className="w-11/12 mt-14 gap-y-10 lg:gap-y-0 lg:mt-0 h-1/2 grid grid-cols-3 lg:grid-cols-7 place-items-center">
         <img
           style={{ boxShadow: "1px 1px 20px rgba(173, 216, 230, 0.4" }}
           className="w-16 h-16 rounded-xl "

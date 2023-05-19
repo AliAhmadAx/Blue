@@ -1,24 +1,3 @@
-// import React from "react";
-// import heart from "../../assets/Images/icons/heart.svg";
-
-// function FloatingNameTag() {
-//   return (
-//     <div>
-//       <span className="flex space-x-3 text-white/70 cursor-pointer">
-//         <h2 className="font-serif font-semibold ">IMAN ANIYA</h2>
-
-//         <span className="flex space-x-1">
-//           <img src={heart} alt="" />
-//           <img src={heart} alt="" />
-//           <img src={heart} alt="" />
-//         </span>
-//       </span>
-//     </div>
-//   );
-// }
-
-// export default FloatingNameTag;
-
 import React, { useRef, useState } from "react";
 import heart from "../../assets/Images/icons/heart.svg";
 
@@ -46,7 +25,7 @@ export default function FloatingNameTag() {
       >
         <SwiperSlide>
           <span className="flex space-x-3 text-white/70 cursor-pointer">
-            <h2 className="font-serif font-semibold ">IMAN ANIYA</h2>
+            <h2 className="font-serif font-semibold text-sm ">IMAN ANIYA</h2>
             <span className="flex space-x-1">
               <img src={heart} alt="" />
               <img src={heart} alt="" />
@@ -56,7 +35,7 @@ export default function FloatingNameTag() {
         </SwiperSlide>
         <SwiperSlide>
           <span className="flex space-x-3 text-white/70 cursor-pointer">
-            <h2 className="font-serif font-semibold ">IMAN ANIYA</h2>
+            <h2 className="font-serif font-semibold text-sm ">IMAN ANIYA</h2>
             <span className="flex space-x-1">
               <img src={heart} alt="" />
               <img src={heart} alt="" />
@@ -66,7 +45,7 @@ export default function FloatingNameTag() {
         </SwiperSlide>{" "}
         <SwiperSlide>
           <span className="flex space-x-3 text-white/70 cursor-pointer">
-            <h2 className="font-serif font-semibold ">IMAN ANIYA</h2>
+            <h2 className="font-serif font-semibold text-sm ">IMAN ANIYA</h2>
             <span className="flex space-x-1">
               <img src={heart} alt="" />
               <img src={heart} alt="" />
@@ -76,7 +55,7 @@ export default function FloatingNameTag() {
         </SwiperSlide>{" "}
         <SwiperSlide>
           <span className="flex space-x-3 text-white/70 cursor-pointer">
-            <h2 className="font-serif font-semibold ">IMAN ANIYA</h2>
+            <h2 className="font-serif font-semibold text-sm ">IMAN ANIYA</h2>
             <span className="flex space-x-1">
               <img src={heart} alt="" />
               <img src={heart} alt="" />
@@ -86,7 +65,7 @@ export default function FloatingNameTag() {
         </SwiperSlide>{" "}
         <SwiperSlide>
           <span className="flex space-x-3 text-white/70 cursor-pointer">
-            <h2 className="font-serif font-semibold ">IMAN ANIYA</h2>
+            <h2 className="font-serif font-semibold text-sm ">IMAN ANIYA</h2>
             <span className="flex space-x-1">
               <img src={heart} alt="" />
               <img src={heart} alt="" />
@@ -96,7 +75,7 @@ export default function FloatingNameTag() {
         </SwiperSlide>{" "}
         <SwiperSlide>
           <span className="flex space-x-3 text-white/70 cursor-pointer">
-            <h2 className="font-serif font-semibold ">IMAN ANIYA</h2>
+            <h2 className="font-serif font-semibold text-sm ">IMAN ANIYA</h2>
             <span className="flex space-x-1">
               <img src={heart} alt="" />
               <img src={heart} alt="" />
@@ -106,7 +85,7 @@ export default function FloatingNameTag() {
         </SwiperSlide>{" "}
         <SwiperSlide>
           <span className="flex space-x-3 text-white/70 cursor-pointer">
-            <h2 className="font-serif font-semibold ">IMAN ANIYA</h2>
+            <h2 className="font-serif font-semibold text-sm ">IMAN ANIYA</h2>
             <span className="flex space-x-1">
               <img src={heart} alt="" />
               <img src={heart} alt="" />
@@ -116,7 +95,7 @@ export default function FloatingNameTag() {
         </SwiperSlide>{" "}
         <SwiperSlide>
           <span className="flex space-x-3 text-white/70 cursor-pointer">
-            <h2 className="font-serif font-semibold ">IMAN ANIYA</h2>
+            <h2 className="font-serif font-semibold text-sm ">IMAN ANIYA</h2>
             <span className="flex space-x-1">
               <img src={heart} alt="" />
               <img src={heart} alt="" />
@@ -126,7 +105,7 @@ export default function FloatingNameTag() {
         </SwiperSlide>{" "}
         <SwiperSlide>
           <span className="flex space-x-3 text-white/70 cursor-pointer">
-            <h2 className="font-serif font-semibold ">IMAN ANIYA</h2>
+            <h2 className="font-serif font-semibold text-sm ">IMAN ANIYA</h2>
             <span className="flex space-x-1">
               <img src={heart} alt="" />
               <img src={heart} alt="" />

@@ -3,7 +3,7 @@ import { AiOutlineStar } from "react-icons/ai";
 
 function Card2(props) {
   return (
-    <div className="w-11/12 px-10 py-10 text-gray-300 rounded-sm border border-blue-300/20 backdrop-blur-lg bg-[#203764]/20">
+    <div className="w-11/12 my-5 lg:my-0 px-10 py-10 text-gray-300 rounded-sm border border-blue-300/20 backdrop-blur-lg bg-[#203764]/20">
       <h1 className="text-lg satoshi-light py-2">{props.title}</h1>
 
       <h2 className="">{props.desc}</h2>

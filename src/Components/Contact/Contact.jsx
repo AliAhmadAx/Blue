@@ -4,15 +4,15 @@ import Buttons from "../Buttons/Buttons";
 
 function Contact() {
   return (
-    <div className="w-full">
-      <div className="w-full flex whitespace-nowrap space-x-5 p-4 border border-blue-300/20 backdrop-blur-lg bg-white/10 ">
+    <div className="w-full pb-10 lg:pb-0 border-t lg:border-t-none border-gray-300/70">
+      <div className="w-full hidden lg:flex whitespace-nowrap space-x-5 p-3 border border-blue-300/20 backdrop-blur-lg bg-white/10 ">
         <FloatingNameTag />
       </div>
 
-      <div className="w-full flex">
+      <div className="w-full flex flex-col lg:flex-row">
         {/* LHS  */}
-        <div className="w-1/2 h-[60vh] flex flex-col justify-center items-center text-left text-white/70">
-          <span className="w-2/3 flex flex-col justify-center leading-[70px]">
+        <div className="w-full lg:w-1/2 h-[60vh] flex flex-col justify-center items-center text-center lg:text-left text-white/70">
+          <span className="w-2/3 flex flex-col justify-center leading-[65px]">
             <p className="text-xs">PROJECT IN MIND ?</p>
             <h3 className="text-white/80 satoshi-light text-[50px]">
               Let's make your
@@ -29,8 +29,8 @@ function Contact() {
         </div>
 
         {/* RHS  */}
-        <div className="w-1/2 flex flex-col justify-center items-center text-left text-white/80">
-          <span className="w-2/3 flex items-center space-x-2">
+        <div className="w-full lg:w-1/2 flex flex-col justify-center items-center text-left text-white/80">
+          <span className="w-11/12 lg:w-2/3 flex items-center space-x-2">
             <label
               htmlFor="Email"
               className="text-xs text-white whitespace-nowrap"
@@ -43,7 +43,7 @@ function Contact() {
             />
           </span>
 
-          <span className="w-2/3 flex space-x-2 mt-5">
+          <span className="w-11/12 lg:w-2/3 flex space-x-2 mt-5">
             <label
               htmlFor="area"
               className="text-xs text-white whitespace-nowrap"
@@ -58,7 +58,7 @@ function Contact() {
               rows="6"
             ></textarea>
           </span>
-          <span className="w-2/3 mt-5 flex justify-end">
+          <span className="w-11/12 lg:w-2/3 mt-2 lg:mt-5 flex justify-end">
             <Buttons ButtonTitle="SEND" />
           </span>
         </div>

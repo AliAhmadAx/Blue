@@ -12,11 +12,14 @@ function Card1() {
         01
       </p>
 
-      <h1 style={{ fontFamily: "Satoshi-Regular" }} className="text-lg">
+      <h1 style={{ fontFamily: "Satoshi-Regular" }} className="lg:text-lg">
         Web Design & UI/UX
       </h1>
 
-      <h2 style={{ fontFamily: "Satoshi-Regular" }}>
+      <h2
+        style={{ fontFamily: "Satoshi-Regular" }}
+        className="text-xs lg:text-base"
+      >
         Visually stunning web and mobile app designs that captivate your
         audience by blending brand voice and customer needs
       </h2>

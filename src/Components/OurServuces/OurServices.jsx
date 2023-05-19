@@ -5,10 +5,10 @@ import patch3 from "../../assets/Images/patch3.svg";
 
 function OurServices() {
   return (
-    <div className="w-full flex flex-col items-center text-white">
-      <h2 className="text-[48px] uppercase">Our Services</h2>
+    <div className="w-full mt-10 lg:mt-0 flex flex-col items-center text-white">
+      <h2 className="text-[30px] lg:text-[48px] uppercase">Our Services</h2>
 
-      <div className="w-10/12 py-10 relative grid grid-cols-3 place-items-center gap-y-8">
+      <div className="w-10/12 py-5 lg:py-10 relative grid grid-cols-1 lg:grid-cols-3 place-items-center gap-y-8">
         <Card1 />
         <Card1 />
         <Card1 />
