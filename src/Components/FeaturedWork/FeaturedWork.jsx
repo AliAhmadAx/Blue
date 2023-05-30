@@ -1,16 +1,17 @@
-import React from "react";
-import web from "../../assets/Images/website.svg";
-import black from "../../assets/Images/black.svg";
-import horse from "../../assets/Images/horse.svg";
-import tiles from "../../assets/Images/tiles.svg";
-import perfume from "../../assets/Images/perfume.svg";
-import gold from "../../assets/Images/gold.svg";
-import art from "../../assets/Images/art.svg";
-import portrait from "../../assets/Images/portrait.svg";
+import web from "../../assets/Images/Website.svg";
+import black from "../../assets/Images/Black.svg";
+import horse from "../../assets/Images/Horse.svg";
+import tiles from "../../assets/Images/Tiles.svg";
+import perfume from "../../assets/Images/Perfume.svg";
+import gold from "../../assets/Images/Gold.svg";
+import art from "../../assets/Images/Art.svg";
+import portrait from "../../assets/Images/Portrait.svg";
 import { RxArrowTopRight } from "react-icons/rx";
 import Transparent from "../Buttons/Transparent";
+import { useNavigate } from "react-router-dom";
 
 function FeaturedWork() {
+  let navigate = useNavigate();
   return (
     <div className="w-full pb-10 lg:py-20 flex flex-col items-center text-white">
       <h2 className="text-[30px] lg:text-[48px] uppercase">Featured Work</h2>
@@ -54,7 +55,16 @@ function FeaturedWork() {
           <RxArrowTopRight className="m-1 text-xs" />
         </div>
 
-        <Transparent ButtonTitle={"VIEW ALL"} />
+        <Transparent
+          onClick={() => {
+            navigate("/portfolio/view-all");
+            window.scrollTo({
+              top: 0,
+              behavior: "smooth",
+            });
+          }}
+          ButtonTitle={"VIEW ALL"}
+        />
       </span>
     </div>
   );

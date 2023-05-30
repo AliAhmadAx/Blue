@@ -1,20 +1,37 @@
-import React from "react";
+import { useState } from "react";
+import PrivacyPolicyModal from "../Modal/PrivacyPolicyModal";
+
+// icons
 import { BsArrowUp } from "react-icons/bs";
 import { BiPhone } from "react-icons/bi";
 import { FiMail } from "react-icons/fi";
+import { AiOutlineInstagram } from "react-icons/ai";
 
+// images
 import ALeft from "../../assets/Images/logo/ALeft.svg";
 import white_logo from "../../assets/Images/logo/WhiteFullLogo.svg";
 import ARight from "../../assets/Images/logo/ARight.svg";
-import { AiOutlineInstagram } from "react-icons/ai";
+
+// TEXTS
+import { PrivacyText, PaymentText, TermsText } from "../../TextData";
+import TermsConditions from "../Modal/TermsConditions";
+import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
   const ScrollToTop = () => {
-    window.scrollTo(0, 0);
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
   };
 
+  let navigate = useNavigate();
+
+  const [showModal, setShowModal] = useState(0);
+  const [showTermsModal, setShowTermsModal] = useState(false);
+
   return (
-    <div className="footer-background-gradient w-full text-white bg-[#07092D]">
+    <div className="footer-background-gradient footer-image w-full text-white bg-[#07092D]">
       <footer
         aria-label="Site Footer"
         className="footer-background-gradient w-full "
@@ -48,8 +65,12 @@ const Footer = () => {
                   <ul className="space-y-4 text-sm text-center">
                     <li>
                       <a
-                        className="text-gray-300 transition hover:text-gray-100/75 font-thin flex items-center justify-center lg:justify-start"
-                        href="/"
+                        className="text-gray-300 cursor-pointer transition hover:text-gray-100/75 font-thin flex items-center justify-center lg:justify-start"
+                        onClick={() =>
+                          window.open(
+                            "https://www.instagram.com/IA_CREATIVEDESIGNS"
+                          )
+                        }
                       >
                         <span className="border border-gray-500/50 rounded-full mr-5">
                           <AiOutlineInstagram className="m-[8px]" />
@@ -61,7 +82,7 @@ const Footer = () => {
                     <li>
                       <a
                         className="text-gray-300 transition hover:text-gray-100/75 flex items-center justify-center lg:justify-start"
-                        href="/"
+                        href="tel:+9233277844161"
                       >
                         <span className="border border-gray-500/50 rounded-full mr-5">
                           <BiPhone className="m-[8px]" />
@@ -72,13 +93,13 @@ const Footer = () => {
 
                     <li>
                       <a
-                        className="text-gray-300 uppercase transition hover:text-gray-100/75 flex items-center justify-center lg:justify-start"
-                        href="/"
+                        className="text-gray-300 uppercase transition hover:text-gray-100/75 flex items-center justify-center lg:justify-start lg:text-left"
+                        href="iacreativedesigns@iacreative-designs.com"
                       >
                         <span className="border border-gray-500/50 rounded-full mr-5">
                           <FiMail className="m-[8px]" />
                         </span>
-                        imanayub@imananiya.com
+                        iacreativedesigns@iacreative-designs.com
                       </a>
                     </li>
                   </ul>
@@ -90,8 +111,14 @@ const Footer = () => {
                   <ul className="space-y-4 text-sm">
                     <li>
                       <a
-                        className="text-gray-300 transition hover:text-gray-100/75 font-thin flex items-center justify-center lg:justify-start"
-                        href="/"
+                        className="text-gray-300 cursor-pointer transition hover:text-gray-100/75 font-thin flex items-center justify-center lg:justify-start"
+                        onClick={() => {
+                          navigate("/");
+                          window.scrollTo({
+                            top: 0,
+                            behavior: "smooth",
+                          });
+                        }}
                       >
                         HOME
                       </a>
@@ -99,8 +126,14 @@ const Footer = () => {
 
                     <li>
                       <a
-                        className="text-gray-300 transition hover:text-gray-100/75 flex items-center justify-center lg:justify-start"
-                        href="/"
+                        className="text-gray-300 cursor-pointer transition hover:text-gray-100/75 flex items-center justify-center lg:justify-start"
+                        onClick={() => {
+                          navigate("/#services");
+                          window.scrollTo({
+                            top: 0,
+                            behavior: "smooth",
+                          });
+                        }}
                       >
                         SERVICES
                       </a>
@@ -108,8 +141,14 @@ const Footer = () => {
 
                     <li>
                       <a
-                        className="text-gray-300 transition hover:text-gray-100/75 flex items-center justify-center lg:justify-start"
-                        href="/"
+                        className="text-gray-300 cursor-pointer transition hover:text-gray-100/75 flex items-center justify-center lg:justify-start"
+                        onClick={() => {
+                          navigate("/about");
+                          window.scrollTo({
+                            top: 0,
+                            behavior: "smooth",
+                          });
+                        }}
                       >
                         ABOUT
                       </a>
@@ -117,8 +156,14 @@ const Footer = () => {
 
                     <li>
                       <a
-                        className="text-gray-300 transition hover:text-gray-100/75 flex items-center justify-center lg:justify-start"
-                        href="/"
+                        className="text-gray-300 cursor-pointer transition hover:text-gray-100/75 flex items-center justify-center lg:justify-start"
+                        onClick={() => {
+                          navigate("/portfolio");
+                          window.scrollTo({
+                            top: 0,
+                            behavior: "smooth",
+                          });
+                        }}
                       >
                         PORTFOLIO
                       </a>
@@ -132,8 +177,8 @@ const Footer = () => {
                   <ul className="space-y-4 text-sm ">
                     <li>
                       <a
-                        className="text-gray-300 transition hover:text-gray-100/75 font-thin flex items-center justify-center lg:justify-start"
-                        href="/"
+                        onClick={() => setShowModal(2)}
+                        className="text-gray-300 cursor-pointer transition hover:text-gray-100/75 font-thin flex items-center justify-center lg:justify-start"
                       >
                         PAYMENT POLICY
                       </a>
@@ -141,21 +186,37 @@ const Footer = () => {
 
                     <li>
                       <a
-                        className="text-gray-300 transition hover:text-gray-100/75 flex items-center justify-center lg:justify-start"
-                        href="/"
+                        onClick={() => setShowModal(1)}
+                        className="text-gray-300 cursor-pointer transition hover:text-gray-100/75 flex items-center justify-center lg:justify-start"
                       >
                         PRIVACY POLICY
                       </a>
                     </li>
 
+                    {showModal === 1 || showModal === 2 ? (
+                      <PrivacyPolicyModal
+                        showModal={showModal}
+                        setShowModal={setShowModal}
+                        PrivacyText={PrivacyText}
+                        PaymentText={PaymentText}
+                      />
+                    ) : null}
+
                     <li>
                       <a
-                        className="text-gray-300 transition hover:text-gray-100/75 flex items-center justify-center lg:justify-start"
-                        href="/"
+                        onClick={() => setShowTermsModal(true)}
+                        className="text-gray-300 cursor-pointer transition hover:text-gray-100/75 flex items-center justify-center lg:justify-start"
                       >
                         TERMS & CONDITIONS
                       </a>
                     </li>
+
+                    {showTermsModal === true ? (
+                      <TermsConditions
+                        setShowTermsModal={setShowTermsModal}
+                        TermsText={TermsText}
+                      />
+                    ) : null}
                   </ul>
                 </nav>
               </div>
@@ -169,7 +230,10 @@ const Footer = () => {
                 Khalid.
               </p>
 
-              <span className="hidden lg:flex items-center space-x-5 pr-20 cursor-pointer">
+              <span
+                onClick={ScrollToTop}
+                className="hidden lg:flex items-center space-x-5 pr-20 cursor-pointer"
+              >
                 <p
                   style={{ fontFamily: "'Times New Roman', Times, serif" }}
                   className=" text-white/70 ml-1"
@@ -177,10 +241,7 @@ const Footer = () => {
                   TO TOP
                 </p>
 
-                <span
-                  onClick={ScrollToTop}
-                  className="border border-gray-500/50 rounded-full"
-                >
+                <span className="border border-gray-500/50 rounded-full">
                   <BsArrowUp className="m-[12px]" />
                 </span>
               </span>

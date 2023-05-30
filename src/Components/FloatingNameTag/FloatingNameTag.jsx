@@ -1,5 +1,4 @@
-import React, { useRef, useState } from "react";
-import heart from "../../assets/Images/icons/heart.svg";
+import heart from "../../assets/Images/icons/Heart.svg";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -8,6 +7,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
+import "swiper/css/autoplay";
 
 // import required modules
 import { FreeMode, Autoplay } from "swiper";
@@ -19,12 +19,15 @@ export default function FloatingNameTag() {
         slidesPerView={7}
         spaceBetween={30}
         freeMode={true}
-        Autoplay={true}
+        autoplay={{
+          delay: 2000,
+          disableOnInteraction: false,
+        }}
         modules={[FreeMode, Autoplay]}
         className=""
       >
         <SwiperSlide className="">
-          <span className="flex space-x-3 text-white/70 cursor-pointer">
+          <span className="flex space-x-3 text-white/70 ">
             <h2 className="font-serif font-semibold text-sm">IMAN ANIYA</h2>
             <span className="flex space-x-1">
               <img src={heart} alt="" />
@@ -34,7 +37,7 @@ export default function FloatingNameTag() {
           </span>
         </SwiperSlide>
         <SwiperSlide className="">
-          <span className="flex space-x-3 text-white/70 cursor-pointer">
+          <span className="flex space-x-3 text-white/70 ">
             <h2 className="font-serif font-semibold text-sm">IMAN ANIYA</h2>
             <span className="flex space-x-1">
               <img src={heart} alt="" />
@@ -44,7 +47,7 @@ export default function FloatingNameTag() {
           </span>
         </SwiperSlide>
         <SwiperSlide>
-          <span className="flex space-x-3 text-white/70 cursor-pointer">
+          <span className="flex space-x-3 text-white/70 ">
             <h2 className="font-serif font-semibold text-sm">IMAN ANIYA</h2>
             <span className="flex space-x-1">
               <img src={heart} alt="" />
@@ -54,7 +57,7 @@ export default function FloatingNameTag() {
           </span>
         </SwiperSlide>
         <SwiperSlide>
-          <span className="flex space-x-3 text-white/70 cursor-pointer">
+          <span className="flex space-x-3 text-white/70 ">
             <h2 className="font-serif font-semibold text-sm">IMAN ANIYA</h2>
             <span className="flex space-x-1">
               <img src={heart} alt="" />
@@ -64,7 +67,7 @@ export default function FloatingNameTag() {
           </span>
         </SwiperSlide>
         <SwiperSlide>
-          <span className="flex space-x-3 text-white/70 cursor-pointer">
+          <span className="flex space-x-3 text-white/70 ">
             <h2 className="font-serif font-semibold text-sm ">IMAN ANIYA</h2>
             <span className="flex space-x-1">
               <img src={heart} alt="" />
@@ -74,7 +77,7 @@ export default function FloatingNameTag() {
           </span>
         </SwiperSlide>{" "}
         <SwiperSlide>
-          <span className="flex space-x-3 text-white/70 cursor-pointer">
+          <span className="flex space-x-3 text-white/70 ">
             <h2 className="font-serif font-semibold text-sm ">IMAN ANIYA</h2>
             <span className="flex space-x-1">
               <img src={heart} alt="" />
@@ -84,7 +87,7 @@ export default function FloatingNameTag() {
           </span>
         </SwiperSlide>{" "}
         <SwiperSlide>
-          <span className="flex space-x-3 text-white/70 cursor-pointer">
+          <span className="flex space-x-3 text-white/70 ">
             <h2 className="font-serif font-semibold text-sm ">IMAN ANIYA</h2>
             <span className="flex space-x-1">
               <img src={heart} alt="" />
@@ -94,7 +97,7 @@ export default function FloatingNameTag() {
           </span>
         </SwiperSlide>{" "}
         <SwiperSlide>
-          <span className="flex space-x-3 text-white/70 cursor-pointer">
+          <span className="flex space-x-3 text-white/70 ">
             <h2 className="font-serif font-semibold text-sm ">IMAN ANIYA</h2>
             <span className="flex space-x-1">
               <img src={heart} alt="" />
@@ -104,7 +107,7 @@ export default function FloatingNameTag() {
           </span>
         </SwiperSlide>{" "}
         <SwiperSlide>
-          <span className="flex space-x-3 text-white/70 cursor-pointer">
+          <span className="flex space-x-3 text-white/70 ">
             <h2 className="font-serif font-semibold text-sm ">IMAN ANIYA</h2>
             <span className="flex space-x-1">
               <img src={heart} alt="" />
@@ -114,7 +117,7 @@ export default function FloatingNameTag() {
           </span>
         </SwiperSlide>{" "}
         <SwiperSlide>
-          <span className="flex space-x-3 text-white/70 cursor-pointer">
+          <span className="flex space-x-3 text-white/70 ">
             <h2 className="font-serif font-semibold text-sm ">IMAN ANIYA</h2>
             <span className="flex space-x-1">
               <img src={heart} alt="" />
@@ -124,7 +127,7 @@ export default function FloatingNameTag() {
           </span>
         </SwiperSlide>{" "}
         <SwiperSlide>
-          <span className="flex space-x-3 text-white/70 cursor-pointer">
+          <span className="flex space-x-3 text-white/70 ">
             <h2 className="font-serif font-semibold text-sm ">IMAN ANIYA</h2>
             <span className="flex space-x-1">
               <img src={heart} alt="" />
@@ -134,7 +137,127 @@ export default function FloatingNameTag() {
           </span>
         </SwiperSlide>{" "}
         <SwiperSlide>
-          <span className="flex space-x-3 text-white/70 cursor-pointer">
+          <span className="flex space-x-3 text-white/70 ">
+            <h2 className="font-serif font-semibold text-sm ">IMAN ANIYA</h2>
+            <span className="flex space-x-1">
+              <img src={heart} alt="" />
+              <img src={heart} alt="" />
+              <img src={heart} alt="" />
+            </span>
+          </span>
+        </SwiperSlide>
+        <SwiperSlide>
+          <span className="flex space-x-3 text-white/70 ">
+            <h2 className="font-serif font-semibold text-sm ">IMAN ANIYA</h2>
+            <span className="flex space-x-1">
+              <img src={heart} alt="" />
+              <img src={heart} alt="" />
+              <img src={heart} alt="" />
+            </span>
+          </span>
+        </SwiperSlide>{" "}
+        <SwiperSlide>
+          <span className="flex space-x-3 text-white/70 ">
+            <h2 className="font-serif font-semibold text-sm ">IMAN ANIYA</h2>
+            <span className="flex space-x-1">
+              <img src={heart} alt="" />
+              <img src={heart} alt="" />
+              <img src={heart} alt="" />
+            </span>
+          </span>
+        </SwiperSlide>{" "}
+        <SwiperSlide>
+          <span className="flex space-x-3 text-white/70 ">
+            <h2 className="font-serif font-semibold text-sm ">IMAN ANIYA</h2>
+            <span className="flex space-x-1">
+              <img src={heart} alt="" />
+              <img src={heart} alt="" />
+              <img src={heart} alt="" />
+            </span>
+          </span>
+        </SwiperSlide>
+        <SwiperSlide>
+          <span className="flex space-x-3 text-white/70 ">
+            <h2 className="font-serif font-semibold text-sm ">IMAN ANIYA</h2>
+            <span className="flex space-x-1">
+              <img src={heart} alt="" />
+              <img src={heart} alt="" />
+              <img src={heart} alt="" />
+            </span>
+          </span>
+        </SwiperSlide>{" "}
+        <SwiperSlide>
+          <span className="flex space-x-3 text-white/70 ">
+            <h2 className="font-serif font-semibold text-sm ">IMAN ANIYA</h2>
+            <span className="flex space-x-1">
+              <img src={heart} alt="" />
+              <img src={heart} alt="" />
+              <img src={heart} alt="" />
+            </span>
+          </span>
+        </SwiperSlide>{" "}
+        <SwiperSlide>
+          <span className="flex space-x-3 text-white/70 ">
+            <h2 className="font-serif font-semibold text-sm ">IMAN ANIYA</h2>
+            <span className="flex space-x-1">
+              <img src={heart} alt="" />
+              <img src={heart} alt="" />
+              <img src={heart} alt="" />
+            </span>
+          </span>
+        </SwiperSlide>{" "}
+        <SwiperSlide>
+          <span className="flex space-x-3 text-white/70 ">
+            <h2 className="font-serif font-semibold text-sm ">IMAN ANIYA</h2>
+            <span className="flex space-x-1">
+              <img src={heart} alt="" />
+              <img src={heart} alt="" />
+              <img src={heart} alt="" />
+            </span>
+          </span>
+        </SwiperSlide>{" "}
+        <SwiperSlide>
+          <span className="flex space-x-3 text-white/70 ">
+            <h2 className="font-serif font-semibold text-sm ">IMAN ANIYA</h2>
+            <span className="flex space-x-1">
+              <img src={heart} alt="" />
+              <img src={heart} alt="" />
+              <img src={heart} alt="" />
+            </span>
+          </span>
+        </SwiperSlide>{" "}
+        <SwiperSlide>
+          <span className="flex space-x-3 text-white/70 ">
+            <h2 className="font-serif font-semibold text-sm ">IMAN ANIYA</h2>
+            <span className="flex space-x-1">
+              <img src={heart} alt="" />
+              <img src={heart} alt="" />
+              <img src={heart} alt="" />
+            </span>
+          </span>
+        </SwiperSlide>{" "}
+        <SwiperSlide>
+          <span className="flex space-x-3 text-white/70 ">
+            <h2 className="font-serif font-semibold text-sm ">IMAN ANIYA</h2>
+            <span className="flex space-x-1">
+              <img src={heart} alt="" />
+              <img src={heart} alt="" />
+              <img src={heart} alt="" />
+            </span>
+          </span>
+        </SwiperSlide>{" "}
+        <SwiperSlide>
+          <span className="flex space-x-3 text-white/70 ">
+            <h2 className="font-serif font-semibold text-sm ">IMAN ANIYA</h2>
+            <span className="flex space-x-1">
+              <img src={heart} alt="" />
+              <img src={heart} alt="" />
+              <img src={heart} alt="" />
+            </span>
+          </span>
+        </SwiperSlide>{" "}
+        <SwiperSlide>
+          <span className="flex space-x-3 text-white/70 ">
             <h2 className="font-serif font-semibold text-sm ">IMAN ANIYA</h2>
             <span className="flex space-x-1">
               <img src={heart} alt="" />
