@@ -13,6 +13,7 @@ import TermsConditions from "../Modal/TermsConditions";
 import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
+
   const ScrollToTop = () => {
     window.scrollTo({
       top: 0,
