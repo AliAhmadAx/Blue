@@ -91,8 +91,8 @@
 
 
   *{
-    --BaseColor1: #010530;
-    --BaseColor2: #060B54;
+    --BaseColor1: #b3b3b3;
+    --BaseColor2: #dadadaa4;
     font-family: "Chillax-Light" ;
 }
 
@@ -104,7 +104,7 @@
 }
 
 .hero-image{
-    background: url("./assets/Images/HeroImage.svg");
+    background: linear-gradient(rgba(0, 0, 0, 0.300), rgba(0, 0, 0, 0.300)), url("https://images.unsplash.com/photo-1580654712603-eb43273aff33?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -141,14 +141,14 @@
 }
 
 .goals-image{
-    background: url("./assets/Images/GoalsImage.svg");
+    background: linear-gradient(rgba(0, 0, 0, 0.300), rgba(0, 0, 0, 0.300)), url("https://images.unsplash.com/photo-1603467722504-50bb4cf540dd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .aims-image{
-    background: url("./assets/Images/OurAims.svg");
+    background: linear-gradient(rgba(0, 0, 0, 0.300), rgba(0, 0, 0, 0.300)), url("https://images.unsplash.com/photo-1627727669629-06af2a397072?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

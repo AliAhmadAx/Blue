@@ -4,9 +4,7 @@ import HeroSection from "../../Components/HerpSection/HeroSection";
 import DigitalCreative from "../../Components/DigitalCreative/DigitalCreative";
 import OurServices from "../../Components/OurServices/OurServices";
 import OurGoals from "../../Components/OurGoals/OurGoals";
-const FeaturedWork = React.lazy(() =>
-  import("../../Components/FeaturedWork/FeaturedWork")
-);
+
 const Testimonials = React.lazy(() =>
   import("../../Components/Testimonials/Testimonials")
 );
@@ -17,7 +15,7 @@ function Home() {
 
   useEffect(() => {
     setHeaderShow(true);
-  }, []);
+  }, [setHeaderShow]);
   return (
     <div className="w-full">
       <section>
@@ -38,10 +36,6 @@ function Home() {
 
       <section>
         <Testimonials />
-      </section>
-
-      <section>
-        <FeaturedWork />
       </section>
 
       <section id="contact">

@@ -20,7 +20,7 @@ function Card1({ item, index }) {
   return (
     <div
       style={{ fontFamily: "Satoshi-Regular" }}
-      className="w-[350px] md:w-full h-[260px] flex flex-col justify-center py-10 px-10 border border-blue-300/30 backdrop-blur-sm bg-[#203764]/10 text-gray-300 z-40 rounded-sm space-y-1"
+      className="w-[350px] md:w-full h-[260px] flex flex-col justify-center py-10 px-10 border border-blue-300/30 backdrop-blur-md bg-white/30 text-black/80 z-40 rounded-sm space-y-1"
     >
       <p style={{ fontFamily: "Satoshi-Regular" }} className="text-xs">
         {index <= 9 ? "0" : null}
@@ -39,7 +39,7 @@ function Card1({ item, index }) {
       </h2>
 
       <div className="flex space-x-3 pt-6">
-        <div className="w-fit rounded-full border border-white/20">
+        <div className="w-fit rounded-full border border-black/20">
           <RxArrowTopRight className="m-1 text-xs" />
         </div>
 

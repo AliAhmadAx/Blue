@@ -7,11 +7,6 @@ import { BiPhone } from "react-icons/bi";
 import { FiMail } from "react-icons/fi";
 import { AiOutlineInstagram } from "react-icons/ai";
 
-// images
-import ALeft from "../../assets/Images/logo/ALeft.svg";
-import white_logo from "../../assets/Images/logo/WhiteFullLogo.svg";
-import ARight from "../../assets/Images/logo/ARight.svg";
-
 // TEXTS
 import { PrivacyText, PaymentText, TermsText } from "../../TextData";
 import TermsConditions from "../Modal/TermsConditions";
@@ -39,23 +34,18 @@ const Footer = () => {
         <div className="w-full">
           <div className="lg:px-24 py-14 place-items-center lg:place-items-start grid grid-cols-1 gap-5 lg:gap-10 lg:grid-cols-3">
             {/* WHOLE LOGO  */}
-            <div className="flex h-full flex-col justify-center items-start relative ">
-              <span className="flex ml-[42px] mb-2">
-                <img src={ALeft} alt="" className="-mr-[12.5px] z-20" />
-                <img src={white_logo} alt="" className="z-0" />
-                <img src={ARight} alt="" className="-ml-[12.5px] z-20" />
-              </span>
+            <div className="flex h-full flex-col justify-center items-center relative ">
               <h1
                 style={{ fontFamily: "'Times New Roman', Times, serif" }}
-                className="text-xl tracking-widest"
+                className="text-3xl tracking-widest"
               >
-                IMAN ANIYA
+                Rent A Car
               </h1>
               <h1
                 style={{ fontFamily: "'Times New Roman', Times, serif" }}
-                className="text-xs text-white/70 ml-1"
+                className="text-xs text-white/70 mr-3"
               >
-                CREATIVE DESIGNING
+                CREATIVE THINKING
               </h1>
             </div>
 
@@ -64,42 +54,29 @@ const Footer = () => {
                 <nav aria-label="Footer About Nav" className="mt-6">
                   <ul className="space-y-4 text-sm text-center">
                     <li>
-                      <a
-                        className="text-gray-300 cursor-pointer transition hover:text-gray-100/75 font-thin flex items-center justify-center lg:justify-start"
-                        onClick={() =>
-                          window.open(
-                            "https://www.instagram.com/IA_CREATIVEDESIGNS"
-                          )
-                        }
-                      >
+                      <a className="text-gray-300 cursor-pointer transition hover:text-gray-100/75 font-thin flex items-center justify-center lg:justify-start">
                         <span className="border border-gray-500/50 rounded-full mr-5">
                           <AiOutlineInstagram className="m-[8px]" />
                         </span>
-                        IA_CREATIVEDESIGNS
+                        @demoaccount
                       </a>
                     </li>
 
                     <li>
-                      <a
-                        className="text-gray-300 transition hover:text-gray-100/75 flex items-center justify-center lg:justify-start"
-                        href="tel:+9233277844161"
-                      >
+                      <a className="text-gray-300 transition hover:text-gray-100/75 flex items-center justify-center lg:justify-start">
                         <span className="border border-gray-500/50 rounded-full mr-5">
                           <BiPhone className="m-[8px]" />
                         </span>
-                        +92 332 77844161
+                        +92 012 34567890
                       </a>
                     </li>
 
                     <li>
-                      <a
-                        className="text-gray-300 uppercase transition hover:text-gray-100/75 flex items-center justify-center lg:justify-start lg:text-left"
-                        href="iacreativedesigns@iacreative-designs.com"
-                      >
+                      <a className="text-gray-300 uppercase transition hover:text-gray-100/75 flex items-center justify-center lg:justify-start lg:text-left">
                         <span className="border border-gray-500/50 rounded-full mr-5">
                           <FiMail className="m-[8px]" />
                         </span>
-                        iacreativedesigns@iacreative-designs.com
+                        demomail@demo.com
                       </a>
                     </li>
                   </ul>
@@ -226,7 +203,7 @@ const Footer = () => {
           <div style={{ background: "var(--footer-bg-color)" }}>
             <div className="w-full flex justify-center lg:justify-between items-center lg:px-20 pb-5 lg:pb-14 ">
               <p className="text-white/80 text-[8px] lg:text-[12px]  text-center self-center mt-7">
-                © 2022 All rights reserved by Iman Aniya. Designed by Maham
+                © 2022 All rights reserved by Rent A Car. Designed by Maham
                 Khalid.
               </p>
 

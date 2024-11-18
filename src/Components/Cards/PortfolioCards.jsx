@@ -8,7 +8,7 @@ function PortfolioCards({ title, image1, image2, image3, keyy }) {
     <div
       key={keyy}
       style={{ fontFamily: "Satoshi-Regular" }}
-      className="w-[300px] h-[300px] flex flex-col text-gray-300 z-40 rounded-sm overflow-hidden"
+      className="w-[300px] h-[300px] flex flex-col text-black/80 z-40 rounded-sm overflow-hidden"
     >
       <span className="w-full relative h-[63%] flex justify-start overflow-hidden">
         <img
@@ -32,8 +32,8 @@ function PortfolioCards({ title, image1, image2, image3, keyy }) {
         <span className="w-full h-[87%] bottom-0 absolute z-30 backdrop-blur-sm bg-transparent/10"></span>
       </span>
 
-      <span className="w-full h-[37%] z-30 -mt-7 bg-gradient-to-l from-[#04083D] to-[#060b4a] py-3 flex flex-col justify-around items-center">
-        <h2 className="satoshi-light text-[20px] text-center uppercase">
+      <span className="w-full h-[37%] z-30 -mt-7 bg-gradient-to-l from-[#d4d4d4] to-[#626262] py-3 flex flex-col justify-around items-center">
+        <h2 className="satoshi-light text-[20px] text-center uppercase font-bold">
           {title}
         </h2>
 

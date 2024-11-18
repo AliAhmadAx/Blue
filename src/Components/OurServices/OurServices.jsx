@@ -5,7 +5,7 @@ import { OurServicesText } from "../../TextData";
 
 function OurServices() {
   return (
-    <div className="w-full mt-10 lg:mt-0 flex flex-col items-center text-white">
+    <div className="w-full mt-10 lg:mt-0 flex flex-col items-center text-black/80">
       <h2 className="text-[30px] lg:text-[48px] uppercase">Our Services</h2>
 
       <div className="w-full md:w-10/12 gap-x-10 lg:py-10 relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center place-content-around gap-y-8">

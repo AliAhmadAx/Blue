@@ -1,4 +1,4 @@
-import React, { createContext, useState } from "react";
+import { createContext, useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./Components/HeaderFooter/Header";
 import Error404 from "./Pages/ExtraPages/Error404";
@@ -28,7 +28,7 @@ function App() {
             <>
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
-              <Route path="/portfolio" element={<Portfolio />}>
+              <Route path="/rent" element={<Portfolio />}>
                 <Route path="" element={<PortfolioMain />} />
                 <Route path="view-all" element={<PortfolioAll />} />
               </Route>

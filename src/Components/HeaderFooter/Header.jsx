@@ -4,9 +4,6 @@ import { RiMenu4Fill } from "react-icons/ri";
 import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import Buttons from "../Buttons/Buttons";
 import { MdClose } from "react-icons/md";
-import ALeft from "../../assets/Images/logo/ALeft.svg";
-import white_logo from "../../assets/Images/logo/WhiteFullLogo.svg";
-import ARight from "../../assets/Images/logo/ARight.svg";
 
 function Header() {
   const [Menu, setMenu] = useState(false);
@@ -28,7 +25,7 @@ function Header() {
     <div
       style={{ fontFamily: "Satoshi-Regular" }}
       className={
-        "w-full h-[100px] text-white/80 flex justify-center -mb-32 z-50"
+        "w-full h-[100px] text-black/80 flex justify-center -mb-32 z-50"
       }
     >
       <div className="w-[90%] h-full flex items-center justify-between py-1">
@@ -37,17 +34,11 @@ function Header() {
           onClick={() => navigate("/")}
           className="self-center block lg:hidden cursor-pointer"
         >
-          <span className="absolute flex top-8">
-            <img src={ALeft} alt="" className="-mr-[21px] z-20 w-6 h-6" />
-            <img src={white_logo} alt="" className="z-0 w-7 h-7" />
-            <img src={ARight} alt="" className="-ml-[21px] z-20 w-6 h-6" />
-          </span>
-
           <h1
             style={{ fontFamily: "'Times New Roman', Times, serif" }}
             className="pl-10 text-sm "
           >
-            IMAN ANIYA
+            Rent A Car
           </h1>
         </span>
 
@@ -55,22 +46,13 @@ function Header() {
           {/* LOGO PC  */}
           <span
             onClick={() => navigate("/")}
-            style={{
-              color: "var(--bg-fill4)",
-            }}
             className="self-center relative text-[16px] pr-10 cursor-pointer flex"
           >
-            <span className="absolute flex -bottom-4">
-              <img src={ALeft} alt="" className="-mr-[12.5px] z-20" />
-              <img src={white_logo} alt="" className="z-0" />
-              <img src={ARight} alt="" className="-ml-[12.5px] z-20" />
-            </span>
-
             <h1
               style={{ fontFamily: "'Times New Roman', Times, serif" }}
-              className="pl-14 text-2xl "
+              className="pl-14 text-2xl"
             >
-              IMAN ANIYA
+              Rent A Car
             </h1>
           </span>
 
@@ -81,7 +63,7 @@ function Header() {
             <NavLink
               end
               style={({ isActive }) => ({
-                borderBottom: isActive ? "2px solid white" : "",
+                borderBottom: isActive ? "2px solid black" : "",
                 fontFamily: "Satoshi-Regular",
               })}
               className={
@@ -95,7 +77,7 @@ function Header() {
             <NavLink
               end
               style={({ isActive }) => ({
-                borderBottom: isActive ? "2px solid white" : "",
+                borderBottom: isActive ? "2px solid black" : "",
                 fontFamily: "Satoshi-Regular",
               })}
               className={
@@ -122,15 +104,15 @@ function Header() {
             <NavLink
               end
               style={({ isActive }) => ({
-                borderBottom: isActive ? "2px solid white" : "",
+                borderBottom: isActive ? "2px solid black" : "",
                 fontFamily: "Satoshi-Regular",
               })}
               className={
                 " text-[16px] hover:border-b-[2px] hover:border-white pt-2 pb-2 pr-3 px-0 mx-0 transition-colors duration-300"
               }
-              to="/portfolio"
+              to="/rent"
             >
-              Portfolio
+              Rent A Car
             </NavLink>
 
             <Buttons

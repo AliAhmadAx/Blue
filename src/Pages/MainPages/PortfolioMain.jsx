@@ -1,92 +1,36 @@
-import React, { lazy, Suspense } from "react";
+import { lazy, Suspense } from "react";
 import HeadingTags from "../../Components/HeadingTags/HeadingTags";
 
 const PortfolioCards = lazy(() =>
   import("../../Components/Cards/PortfolioCards")
 );
 
+import patch2 from "../../assets/Images/patch2.svg";
+
 import { RxArrowTopRight } from "react-icons/rx";
 import Transparent from "../../Components/Buttons/Transparent";
 import { useNavigate } from "react-router-dom";
 
-// IMAGES
-import patch2 from "../../assets/Images/patch2.svg";
-import Branding1 from "../../assets/Images/Portfolio/Branding/Branding1.svg";
-import Branding2 from "../../assets/Images/Portfolio/Branding/Branding2.svg";
-import Branding3 from "../../assets/Images/Portfolio/Branding/Branding3.svg";
-import CIL1 from "../../assets/Images/Portfolio/CoupleIllustration/CIL1.svg";
-import CIL2 from "../../assets/Images/Portfolio/CoupleIllustration/CIL2.svg";
-import CIL3 from "../../assets/Images/Portfolio/CoupleIllustration/CIL3.svg";
-import ILS1 from "../../assets/Images/Portfolio/Illustrations/ILS1.svg";
-import ILS2 from "../../assets/Images/Portfolio/Illustrations/ILS2.svg";
-import ILS3 from "../../assets/Images/Portfolio/Illustrations/ILS3.svg";
-
-import Logo1 from "../../assets/Images/Portfolio/Logos/Logo1.svg";
-import Logo2 from "../../assets/Images/Portfolio/Logos/Logo2.svg";
-import Logo3 from "../../assets/Images/Portfolio/Logos/Logo3.svg";
-import Painting1 from "../../assets/Images/Portfolio/Painting/Painting1.svg";
-import Painting2 from "../../assets/Images/Portfolio/Painting/Painting2.svg";
-import Painting3 from "../../assets/Images/Portfolio/Painting/Painting3.svg";
-import Social1 from "../../assets/Images/Portfolio/Social/Social1.svg";
-import Social2 from "../../assets/Images/Portfolio/Social/Social2.svg";
-import Social3 from "../../assets/Images/Portfolio/Social/Social3.svg";
-import Pot1 from "../../assets/Images/Portfolio/Potraitures/Pot1.svg";
-import Pot2 from "../../assets/Images/Portfolio/Potraitures/Pot2.svg";
-import Pot3 from "../../assets/Images/Portfolio/Potraitures/Pot3.svg";
-import Web1 from "../../assets/Images/Portfolio/WebUI/Web1.svg";
-import Web2 from "../../assets/Images/Portfolio/WebUI/Web2.svg";
-import Web3 from "../../assets/Images/Portfolio/WebUI/Web3.svg";
-
 function PortfolioMain() {
   const PortfolioCardData = [
     {
-      title: "Branding & Packaging",
-      img1: Branding1,
-      img2: Branding2,
-      img3: Branding3,
+      title: "Sports Cars",
+      img1: "https://images.unsplash.com/photo-1573661687979-b1fe429b9da3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+      img2: "https://images.unsplash.com/photo-1610809376778-928ee2c3a561?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+      img3: "https://images.unsplash.com/photo-1569192481814-941b1a1905b6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
     },
 
     {
-      title: "COUPLE ILLUSTRATIONS",
-      img1: CIL1,
-      img2: CIL2,
-      img3: CIL3,
+      title: "Classical Car",
+      img1: "https://images.unsplash.com/photo-1587750059638-e7e8c43b99fc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80",
+      img2: "https://images.unsplash.com/photo-1584345604325-f5091269a0d1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+      img3: "https://images.unsplash.com/photo-1489008777659-ad1fc8e07097?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
     },
     {
-      title: "ILLUSTRATIONS",
-      img1: ILS1,
-      img2: ILS2,
-      img3: ILS3,
-    },
-    {
-      title: "LOGOS",
-      img1: Logo1,
-      img2: Logo2,
-      img3: Logo3,
-    },
-    {
-      title: "CALLIGRAPHY & PAINTING",
-      img1: Painting1,
-      img2: Painting2,
-      img3: Painting3,
-    },
-    {
-      title: "SOCIAL MEDIA",
-      img1: Social1,
-      img2: Social2,
-      img3: Social3,
-    },
-    {
-      title: "POTRAITURES",
-      img1: Pot1,
-      img2: Pot2,
-      img3: Pot3,
-    },
-    {
-      title: "WEB DESIGN & UX/UX",
-      img1: Web1,
-      img2: Web2,
-      img3: Web3,
+      title: "Off-Road",
+      img1: "https://images.unsplash.com/photo-1602038187784-41e649a79d38?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+      img2: "https://images.unsplash.com/photo-1627666259356-03a116b7dde9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+      img3: "https://images.unsplash.com/photo-1558403871-bb6e8113a32e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1331&q=80",
     },
   ];
 
@@ -111,7 +55,7 @@ function PortfolioMain() {
 
       <div className="w-[75%] lg:w-[65%] z-30 portfolio-image h-[70vh] flex justify-center items-center">
         <div className="w-10/12 lg:w-2/3 lg:h-[60%] border border-blue-300/30 text-[35px] lg:text-[50px] backdrop-blur-md bg-transparent p-10 text-center flex flex-col justify-center items-center">
-          <h2 className="">See us bring our clients'</h2>
+          <h2 className="">See us bring our clients&apos;</h2>
           <h2 className="">Imagination to life</h2>
         </div>
       </div>

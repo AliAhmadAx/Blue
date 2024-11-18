@@ -2,10 +2,7 @@ import { useContext, useEffect } from "react";
 import { ThemeContext } from "../../App";
 import HeadingTags from "../../Components/HeadingTags/HeadingTags";
 import patch2 from "../../assets/Images/patch2.svg";
-import WhyChooseUs from "../../Components/AboutUsComps/WhyChooseUs";
-import Stats from "../../Components/AboutUsComps/Stats";
-import MeetTheTeam from "../../Components/AboutUsComps/MeetTheTeam";
-import FloatingNameTag from "../../Components/FloatingNameTag/FloatingNameTag";
+import OurGoals from "../../Components/OurGoals/OurGoals";
 
 function About() {
   const { setHeaderShow } = useContext(ThemeContext);
@@ -28,21 +25,9 @@ function About() {
         </div>
       </div>
 
-      <section className="w-full">
-        <WhyChooseUs />
+      <section>
+        <OurGoals />
       </section>
-
-      <section className="w-full">
-        <Stats />
-      </section>
-
-      <section className="w-full flex justify-center items-center pt-20">
-        <MeetTheTeam />
-      </section>
-
-      <div className="w-full mt-20 hidden lg:flex whitespace-nowrap space-x-5 p-3 border border-blue-300/20 backdrop-blur-lg bg-white/10 ">
-        <FloatingNameTag />
-      </div>
     </div>
   );
 }

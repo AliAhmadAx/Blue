@@ -10,16 +10,13 @@ function OurGoals() {
               Our Goals
             </h2>
             <h2 className="pt-5 leading-[25px] lg:pt-12 px-1 text-xs lg:text-[20px] text-gray-300">
-              At <b>Iman Aniya</b>, our goal is to provide you with the best
-              digital solutions to help your business succeed. Whether you need
-              a new website, social media management, or search engine
-              optimization, our team of experts is here to help. We understand
-              the importance of having a strong online presence in today’s
-              digital age, and we are dedicated to helping you achieve your
-              goals. With our range of services and our commitment to
-              excellence, we are confident that we can help you take your
-              business to the next level. Contact us today to learn more about
-              how we can help you succeed in the digital world.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptates accusantium quaerat, perferendis dicta ea obcaecati.
+              Mollitia beatae omnis quas. Est delectus asperiores ab
+              necessitatibus dolorum, itaque amet repudiandae quas saepe
+              perferendis, qui modi officia autem maxime vel quo? Impedit
+              laudantium suscipit cum repellendus labore ipsam accusantium
+              tenetur accusamus maxime beatae?
             </h2>
           </div>
         </div>
@@ -33,12 +30,14 @@ function OurGoals() {
               Our Aim
             </h2>
             <h2 className="pt-5 lg:pt-12 leading-[25px] text-xs lg:text-[20px] text-gray-300">
-              We Aim To Take Your Company To the Next Level. Achieve your
-              business objectives with tailored solutions using modern
-              technology and deep research. We always prefer devising custom
-              business solutions using modern technology, whether it’s SEO for
-              any kind of website, content writing for blog and social media
-              posts, or graphic designing, logos, posters and more.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+              et veniam, delectus ex quidem obcaecati perspiciatis sit
+              temporibus suscipit! Esse voluptatum explicabo ipsam eius nihil,
+              itaque pariatur ab labore incidunt cumque voluptate quidem ut
+              illo? Laudantium, quod tempora aut natus incidunt amet a sapiente
+              commodi nobis exercitationem tempore consectetur neque repellendus
+              id esse veritatis porro voluptatibus distinctio nostrum
+              perferendis in?
             </h2>
           </div>
         </div>
